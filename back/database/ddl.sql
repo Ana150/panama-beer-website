@@ -11,7 +11,7 @@ create table tbl_administrador(
     
 create table tbl_editaveis(
     idEditaveis int primary key auto_increment,
-    nossa_istoria varchar(1000) not null,
+    nossa_historia varchar(1000) not null,
     nossos_valores varchar(1000) not null
     );
     

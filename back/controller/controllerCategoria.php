@@ -1,50 +1,49 @@
 <?php
 
-class ControllerProduto{
+class ControllerCategoria{
     private $_method;
-    private $_modelProduto;
-    private $_idProduto;
+    private $_modelCategoria;
+    private $_idCategoria;
     
     public function __construct($model){
-        $this->_modelProduto = $model;
+        $this->_modelCategoria = $model;
         $this->_method = $_SERVER["REQUEST_METHOD"];
 
         $json = file_get_contents("php://input");
-        $dadosProduto = json_decode($json);
+        $dadosCategoria = json_decode($json);
 
-        $this->_idProduto = $dadosProduto->idProduto ?? null;
+        $this->_idCategoria = $dadosCategoria->idCategoria ?? null;
     }
 
-           
     public function router(){
         switch ($this->_method) {
             //case GET
             case 'GET':
-                if ($this->_idProduto) {
-                    return $this->_modelProduto->findById();
+                if ($this->_idCategoria) {
+                    return $this->_modelCategoria->findById();
                     break;
                 }
 
-                return $this->_modelProduto->findAll();
+                return $this->_modelCategoria->findAll();
                 break;
 
             //case POST
             case 'POST':
-                if (isset($_POST["idProduto"])) {
-                    return $this->_modelProduto->update();
+                if (isset($_POST["idCategoria"])) {
+                    return $this->_modelCategoria->update();
                     break;
                 }
-                    return $this->_modelProduto->create();
+                    return $this->_modelCategoria->create();
                     break;
             
             //case DELETE
             case 'DELETE':
-                return $this->_modelProduto->delete();
+                return $this->_modelCategoria->delete();
                 break;
 
             //case PUT
             case 'PUT':
-                return $this->_modelProduto->update();
+                return $this->_modelCategoria->update();
                 break;
 
             default:
@@ -52,5 +51,6 @@ class ControllerProduto{
                 break;
         }
     }
-}            
+}
+
 ?>

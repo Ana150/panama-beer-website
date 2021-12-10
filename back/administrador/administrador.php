@@ -6,12 +6,12 @@ header("Access-Control-Allow-Methods: GET, POST, PUT, DELETE");
 header("Content-Type: application/json");
 
 include('../connection.php');
-include('../model/modelCategoria.php');
-include('../controller/controllerCategoria.php');
+include('../model/modelAdministrador.php');
+include('../controller/controllerAdministrador.php');
 
 $_connection = new Connection();
-$model = new ModelCategoria($_connection->returnConnection());
-$controller = new ControllerCategoria($model);
+$model = new ModelAdministrador($_connection->returnConnection());
+$controller = new ControllerAdministrador($model);
 
 $dados = $controller->router();
 

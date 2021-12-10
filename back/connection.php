@@ -1,9 +1,8 @@
-
 <?php
-class connection
+class Connection
 {
     private $_dbHostName = '127.0.0.1';
-    private $_dbName = 'panamabeer';
+    private $_dbName = 'panamaBeer';
     private $_dbuserName = 'root';
     private $_dbPassword = 'bcd127';
     private $_connection;
@@ -17,7 +16,7 @@ class connection
                 $this->_dbPassword
             );
 
-            $this->_conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+            $this->_connection->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         } catch (PDOException $e) {
             echo "Connection error: " . $e->getMessage();
         }

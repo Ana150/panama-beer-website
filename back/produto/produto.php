@@ -8,9 +8,9 @@ include("../connection.php");
 include("../model/modelProduto.php");
 include("../controller/controllerProduto.php");
 
-$_connection = new connection();
-$model = new modelProduto($_connection->returnConnection());
-$controller = new controllerProduto($model);
+$_connection = new Connection();
+$model = new ModelProduto($_connection->returnConnection());
+$controller = new ControllerProduto($model);
 
 $dados = $controller->router();
 

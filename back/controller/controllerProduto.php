@@ -1,38 +1,38 @@
 <?php
 
 class controllerroduto{
-    private $method;
-    private $modelProduto;
-    private $idProduto;
+    private $_method;
+    private $_modelProduto;
+    private $_idProduto;
 }
 
-public function construct($model)
+public function __construct($model)
     {
-        $this->modelProduto = $model;
-        $this->method = $_SERVER['REQUEST_METHOD'];
+        $this->_modelProduto = $model;
+        $this->_method = $_SERVER['REQUEST_METHOD'];
 
         $json = file_get_contents("php://input");
         $dadosProduto = json_decode($json);
 
-        $this->idProduto = $dadosProduto->idProduto ?? $_POST["idProduto"];
+        $this->_idProduto = $dadosProduto->idProduto ?? $_POST["idProduto"];
     }
 
 public function router()
     {
         switch ($this->_method) {
             case 'GET':
-                return $this->modelProduto->findAll();
+                return $this->_modelProduto->findAll();
                 break;
             case 'POST':
-                if ($this->idProduto) {
-                    return $this->modelProduto->update();
+                if ($this->_idProduto) {
+                    return $this->_modelProduto->update();
                     break;
                 }{
-                    return $this->modelProduto->create();
+                    return $this->_modelProduto->create();
                     break;
                 }
             case 'DELETE':
-                return $this->modelProduto->delete();
+                return $this->_modelProduto->delete();
                 break;
 
             default:

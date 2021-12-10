@@ -2,13 +2,13 @@
 
 class ModelProduto{
     private $_connection;
-    private $idProduto;
-    private $preco;
-    private $descricao;
-    private $foto;
+    private $_idProduto;
+    private $_preco;
+    private $_descricao;
+    private $_foto;
 }
 
-public function construct($_connection){
+public function __construct($_connection){
     $this->method = $_SERVER['REQUEST_METHOD'];
 
     $json = file_get_contents("php://input");
@@ -16,11 +16,11 @@ public function construct($_connection){
 
     switch ($this->method) {
         case 'POST':
-            $this->idProduto = $_POST["idProduto"] ?? null;
-            $this->nome = $_POST["nome"] ?? null;
-            $this->preco = $_POST["preco"] ?? null;
-            $this->descricao = $_POST["descricao"] ?? null;
-            $this->foto = $_POST["foto"] ?? null;
+            $this->_idProduto = $_POST["idProduto"] ?? null;
+            $this->_nome = $_POST["nome"] ?? null;
+            $this->_preco = $_POST["preco"] ?? null;
+            $this->_descricao = $_POST["descricao"] ?? null;
+            $this->_foto = $_POST["foto"] ?? null;
             break;
         
         default:
@@ -40,6 +40,17 @@ public function findAll(){
     $sql = "SELECT * FROM tbl_produto";
 
     $stm = $this->_connection->prepare($sql);
+
+    $stm->execute();
+
+    return $stm->fetchAll(\PDO::FETCH_ASSOC);
+}
+
+public function findById(){
+    $sql = "SELECT * FROM tbl_produto WHERE idProduto = ?";
+
+    $stm = $this->_connection->prepare($sql);
+    $stm->bindValue(1, $this->idProduto);
 
     $stm->execute();
 
@@ -97,11 +108,11 @@ public function update(){
 
     $stmt = $this->_connection->prepare($sql);
 
-    $stm->bindValue(1, $this->nome);
-    $stm->bindValue(2, $this->descricao);
-    $stm->bindValue(3, $this->preco);
-    $stm->bindValue(4, $this->foto);
-    $stmt->bindValue(5, $this->idPessoa);
+    $stm->bindValue(1, $this->_nome);
+    $stm->bindValue(2, $this->_descricao);
+    $stm->bindValue(3, $this->_preco);
+    $stm->bindValue(4, $this->_foto);
+    $stmt->bindValue(5, $this->_idPessoa);
 
     if ($stmt->execute()) {
         return "Dados alterados com sucesso!";

@@ -8,7 +8,7 @@
 
 <br />
 <div align="center">
-    <img src="./readme/img/logo.png" alt="Logo" width="100" height="100">
+    <img src="./front/img/logo.png" alt="Logo" width="100" height="100">
 
   <h3 align="center">PANAMÁ-BEER</h3>
 
@@ -47,7 +47,7 @@ Distribuído sob a licença MIT. Veja `LICENSE` para mais informações.
       <a href="#">
         <img src="https://github.com/Ana150.png" width="100px;"/><br>
         <sub>
-          <b>Ana Cristina Araujo oliveira</b>
+          <b>Ana Cristina Araujo Oliveira</b>
         </sub>
       </a>
     </td>

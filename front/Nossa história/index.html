@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="slide.css">
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="slides.css"> -->
+    <title>Nossa História</title>
+</head>
+<body>
+    <header>
+    
+        <div class="container">
+            <input type="checkbox" id="checkbox-menu">
+        
+            <label for="checkbox-menu">
+              <span></span>
+              <span></span>
+              <span></span>
+            </label>
+         
+          </div>
+
+        <a href="#" class="logo">
+            <img src="img/image 7.png" alt="logo-panamá">
+        </a>
+
+        
+    </header>
+    <main>
+      <section class="slide" id="slide">
+            
+            <div class="slider" style="max-width:600px; position:relative">
+            
+                <img class="mySlides" src="img/giphy.gif" style="width:100%">
+                <img class="mySlides" src="img/background-cerveja.jpg" style="width:100%">
+                <img class="mySlides" src="img/cerveja-fundo.jpg" style="width:100%">
+                <img class="mySlides" src="img/giphy beer.gif" style="width:100%">
+                
+                <button class="slider-pointer" style="position:absolute;top:45%;left:0" onclick="plusDivs(-1)">❮</button>
+                <button class="slider-pointer" style="position:absolute;top:45%;right:0" onclick="plusDivs(1)">❯</button   >
+                
+            </div>
+      </section>        
+        <script>
+          var slideIndex = 1;
+          showDivs(slideIndex);
+          
+          function plusDivs(n) {
+            showDivs(slideIndex += n);
+          }
+          
+          function showDivs(n) {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            if (n > x.length) {slideIndex = 1}    
+            if (n < 1) {slideIndex = x.length} ;
+            for (i = 0; i < x.length; i++) {
+              x[i].style.display = "none";  
+            }
+            x[slideIndex-1].style.display = "block";  
+          }
+        </script>
+  
+    </main>
+
+
+    <footer>
+      <div>
+        <H2> Fale conosco</H2>
+          <p> 
+            (11) 96693-4332
+          </p><br>
+        <h2> Horário de atendimento</h2>
+          <p> 
+            "Todos os dias"<br>
+            Segunda a quinta das 8h as 20h<br>
+            Sexta, Sábado e domingo 24h
+          </p>
+      </div>    
+      
+      <img class="footer-image" src="img/Panamá beer.png" style="width: 500px" >
+    </footer>
+    
+    
+  </body>
+  
+  </html>

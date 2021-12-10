@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  user-select: none;
+  outline: none;
+  font-family: 'Source Sans Pro', sans-serif;
+
+}
+
+header {
+  background-color: #000000;
+  height: 90px;
+  display: flex;
+
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10vw;
+  position: relative;
+
+}
+
+.logo img {
+  width: 85px;
+}
+
+.container-header {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#checkbox-menu {
+  position: absolute;
+  opacity: 0;
+}
+
+label {
+  cursor: pointer;
+  position: relative;
+  display: block;
+  height: 22px;
+  width: 30px;
+}
+
+label span {
+  position: absolute;
+  display: block;
+  height: 5px;
+  width: 100%;
+  border-radius: 70px;
+  background: #f16234;
+  transition: 0.25s ease-in-out;
+}
+
+label span:nth-child(1) {
+  top: 0;
+}
+
+label span:nth-child(2) {
+  top: 8px;
+}
+
+label span:nth-child(3) {
+  top: 16px;
+}
+
+#checkbox-menu:checked+label span:nth-child(1) {
+  transform: rotate(-45deg);
+  top: 8px;
+}
+
+#checkbox-menu:checked+label span:nth-child(2) {
+  opacity: 0;
+}
+
+#checkbox-menu:checked+label span:nth-child(3) {
+  transform: rotate(45deg);
+  top: 8px;
+}
+
+
+:root {
+  --backgroundPrimary: #f8f9fa;
+  --backgroundSecondary: #FDC043;
+  --cardPrimary: #B98309;
+}
+
+body {
+  width: 100vw;
+  background-color: var(--backgroundPrimary);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+.search-container {
+  width: 100%;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url(./asset/img/background-cerveja.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  /* background-color: var(--backgroundSecondary); */
+
+}
+
+#input_container {
+  width: 75%;
+  height: 60px;
+  position: relative;
+  /* padding: 0 0 0 20px;
+    margin: 0 20px; */
+  /* direction: rtl; */
+  /* width: 200px; */
+}
+
+#input {
+  height: 100%;
+  width: 100%;
+  border: none;
+  padding: 0em 2em;
+  border-radius: 1em;
+  background-color: var(--backgroundPrimary);
+}
+
+#input_img {
+  position: absolute;
+  bottom: 20px;
+  right: 15px;
+  width: 20px;
+  height: 20px;
+}
+
+.cards-container {
+  width: 100%;
+  display: flex;
+  flex-grow: 1;
+  padding: 2.5em;
+  justify-content: space-evenly;
+}
+
+.cards {
+  background-color: #fff;
+  width: 350px;
+  height: 500px;
+  gap: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 25px;
+  box-shadow: 0px 5px 30px 0px rgb(167 167 167 / 16%);
+  position: relative;
+
+}
+
+.cards .card-img {
+  width: 90%;
+  height: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cards .card-img img {
+  height: 100%;
+}
+
+.cards .card-text {
+  width: 90%;
+  height: 40%;
+  display: flex;
+  gap: 1em;
+  flex-direction: column;
+  text-align: center;
+  justify-content: space-evenly;
+}
+
+.cards .card-text h1 {
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+.cards .card-text p {
+  font-size: 1rem;
+}
+
+.preco {
+  position: absolute;
+  bottom: 0;
+  bottom: -5%;
+  width: 100px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1em;
+  cursor: pointer;
+  background-color: #FDC043;
+  transition: 0.20s;
+
+}
+
+.preco:hover {
+  transform: scale(1.25)
+}
+
+.preco p {
+  color: #fff;
+  letter-spacing: 0.25px;
+  font-weight: 700;
+}
+
+.add-delete {
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+
+.add-delete img {
+  width: 30px;
+  cursor: pointer;
+  height: 30px;
+  transition: 0.15s;
+}
+
+.add-delete img:hover {
+  transform: scale(1.25)
+}
+
+.add-icon {
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  right: 50px;
+  bottom: 50px;
+  transition: 0.25s;
+}
+
+.add-icon:hover {
+  transform: scale(1.25)
+}

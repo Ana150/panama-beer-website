@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleLogin.css">
+    <title>Novo Usuario</title>
+</head>
+
+<div class="login">
+<header>
+
+    <div class="container-header" id="xx">
+        <input type="checkbox" id="checkbox-menu">
+        <label for="checkbox-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+    </div>
+
+    <a href="#" class="logo">
+        <a href="../home/indexHome.html"><img src="../img/logo.png" alt="logo-panamá"></a>
+    </a>
+
+
+</header>
+
+<body>
+
+    <section class="containerNovoAdm">
+        <form method="POST" action="calcular.php">
+            <div class="main-add">
+                <p>Login administrador</p>
+                <div>
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" />
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="text" id="email" name="email" />
+                </div>
+                <div>
+                    <label for="chave_de_acesso">Chave de acesso:</label>
+                    <input type="text" id="chave_de_acesso" name="chave_de_acesso" />
+                </div>
+                <div>
+                    <label for="usuario">Usuário:</label>
+                    <input type="text" id="usuario" name="usuario" />
+                </div>
+                <div class="button">
+                    <button type="submit">Cadastrar</button>
+                </div>
+            </div>
+        </form>
+    </section>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,12 @@
+.slide {
+    background-blend-mode: darken; 
+    background-size: cover; 
+    display: flex;
+    flex-direction: column;
+    font-family: 'Karla', sans-serif;
+    color: rgba(255, 255, 255, 0.87);
+    /* justify-content: center; */
+    flex-grow: 1;
+    padding: 20px 50px;
+}
+

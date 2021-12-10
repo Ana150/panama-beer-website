@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script src="./js/slide-script.js" defer></script>
+        <script src="./js/main.js" defer type="module"></script>
+        <link rel="stylesheet" href="main.css"/>
+        <link rel="stylesheet" href="button.css"/>
+        <title>Página de edição</title>
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <input type="checkbox" id="checkbox-menu" />
+
+                <label for="checkbox-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+            </div>
+
+            <a href="../home/indexHomeAdiministrador.html" class="logo">
+                <img src="../img/image 7.png" alt="logo-panamá" />
+            </a>
+        </header>
+
+        <main>
+                    <form class="modal-form">
+                        <div class="image-container">
+                            <input
+                                id="inputFile"
+                                type="file"
+                                accept="image/*"
+                            />
+                            <label for="inputFile"></label>
+                            <img src="../img/foto.png" id="imagePreview" />
+                    
+                        </div>
+                    </form>
+                    <footer class="modal-footer">
+                        <button class="button save" id="save">Salvar</button>
+                        <button class="button cancel" id="cancel">
+                            Cancelar
+                        </button>
+                    </footer>
+           
+        </main>
+        <footer>
+            <span>Copyright &copy; 2021 | Ana Oliveira - Evelyn Lima - Fernanda Ferreira</span>
+        </footer>
+
+    </body>
+</html>

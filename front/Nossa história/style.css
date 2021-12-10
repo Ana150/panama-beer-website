@@ -1,0 +1,190 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: #000000AA;
+  height: 90px;
+  display: flex;
+
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10vw;
+  position: relative;
+}
+
+header button {
+  font-size: 18px;
+  width: 160px;
+  height: 50px;
+  border-radius: 0px; 
+  border-color: #000000;
+  color: rgb(0, 0, 0);
+  box-shadow: 0 0 40px 40px rgb(185, 132, 9) inset, 0 0 0 0 rgb(185, 132, 9);
+
+}
+
+header  button:hover {
+  transform: scale(1.1);
+  transition: all 0.5s;
+} 
+
+a img{
+  margin-top: 10px;
+}
+
+.logo img {
+  width: 85px;
+  margin-bottom: 5px;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../img/background-cerveja.jpg);
+    background-color: #00000090;
+    background-blend-mode: darken;
+    background-size: cover;
+    background-position: right top;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Karla', sans-serif;
+    color: white;
+    gap: 200px;
+}
+
+.slider{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  position: relative;
+  left: 25%;
+  /* margin-top: 10%; */
+}
+
+.mySlides {
+  display: none;
+  border-radius: 0.5rem;
+  width: 50%;
+
+}
+
+.slider-pointer {
+  z-index: 2;
+  width: 25px;
+  height: 60px;
+  position: absolute;
+  background-color: #9e701b;
+
+  transform: translateY(-50%);
+}
+
+.slider-pointer1 {
+  width: 25px;
+  height: 60px;
+}
+
+.slider-pointer2 {
+  width: 25px;
+  height: 60px;
+}
+
+
+/* .container{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  } */
+
+
+#checkbox-menu {
+  position: absolute;
+  opacity: 0;
+}
+
+label {
+  cursor: pointer;
+  position: relative;
+  display: block;
+  height: 22px;
+  width: 30px;
+}
+
+label span {
+  position: absolute;
+  display: block;
+  height: 5px;
+  width: 100%;
+  border-radius: 70px;
+  background: #b98409;
+  transition: 0.25s ease-in-out;
+}
+
+label span:nth-child(1) {
+  top: 0;
+}
+
+label span:nth-child(2) {
+  top: 8px;
+}
+
+label span:nth-child(3) {
+  top: 16px;
+}
+
+#checkbox-menu:checked+label span:nth-child(1) {
+  transform: rotate(-45deg);
+  top: 8px;
+}
+
+#checkbox-menu:checked+label span:nth-child(2) {
+  opacity: 0;
+}
+
+#checkbox-menu:checked+label span:nth-child(3) {
+  transform: rotate(45deg);
+  top: 8px;
+}
+
+button {
+  width: 18px;
+  height: 40px;
+  background-color: transparent;
+  color: white;
+  border-color: none;
+}
+
+
+/* .background img{
+    width: 100%;
+    position: fixed;
+  } */
+
+footer {
+    display: flex;
+    flex-direction: column;
+    text-align: end;
+    background-color: #000000;
+
+  }
+
+  footer p, h2{
+    margin-right: 45px;
+    margin-top: 0px;
+  }
+
+  footer div{
+    margin-top: 90px;
+  }
+
+.footer-image{
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
+    margin-left: 650px;
+    margin-top: -185px;
+}
+
+

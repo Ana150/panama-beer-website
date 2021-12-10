@@ -1,0 +1,215 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #000000aa;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10vw;
+    position: relative;
+}
+
+a img {
+    margin-top: 10px;
+    width: 85px;
+    margin-bottom: 5px;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background-image: url(../img/imgLogin.png);
+    background-color: #00000055;
+    background-blend-mode: darken;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    font-family: "Karla", sans-serif;
+    font-family: "Tinos", serif;
+    background-position: right;
+}
+
+.container-header {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#checkbox-menu {
+    position: absolute;
+    opacity: 0;
+}
+
+#xx label {
+    cursor: pointer;
+    position: relative;
+    display: block;
+    height: 22px;
+    width: 30px;
+}
+
+label span {
+    position: absolute;
+    display: block;
+    height: 5px;
+    width: 100%;
+    border-radius: 70px;
+    background: #b98409;
+    transition: 0.25s ease-in-out;
+}
+
+label span:nth-child(1) {
+    top: 0;
+}
+
+label span:nth-child(2) {
+    top: 8px;
+}
+
+label span:nth-child(3) {
+    top: 16px;
+}
+
+#checkbox-menu:checked + label span:nth-child(1) {
+    transform: rotate(-45deg);
+    top: 8px;
+}
+
+#checkbox-menu:checked + label span:nth-child(2) {
+    opacity: 0;
+}
+
+#checkbox-menu:checked + label span:nth-child(3) {
+    transform: rotate(45deg);
+    top: 8px;
+}
+
+.login {
+    height: 100%;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0) 65%, rgb(185, 132, 9) 35%);
+}
+
+.container {
+    height: 600px;
+    width: 500px;
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    background-color: white;
+    box-shadow: 0 20px 30px black;
+}
+
+form .main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 25px;
+    padding: 110px;
+}
+
+.main p {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+}
+
+.main div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+.main button {
+    margin-top: 30px;
+    font-size: 18px;
+    width: 160px;
+    height: 50px;
+    border-radius: 0px;
+    border-color: #000000;
+    color: rgb(0, 0, 0);
+    box-shadow: 0 0 40px 40px rgb(185, 132, 9) inset, 0 0 0 0 rgb(185, 132, 9);
+    -webkit-transition: all 150ms ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
+.main button:hover {
+    box-shadow: 0 0 10px 0 rgb(185, 132, 9) inset, 0 0 10px 4px rgb(185, 132, 9);
+}
+
+.containerNovoAdm {
+    height: 600px;
+    width: 500px;
+    position: absolute;
+    left: 45%;
+    top: 20%;
+    background-color: white;
+    box-shadow: 0 20px 30px black;
+}
+
+form .main-add {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 25px;
+    padding: 40px;
+}
+
+.main-add p {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+}
+
+.main-add div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-add label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+.main-add button {
+    margin-top: 30px;
+    font-size: 18px;
+    width: 160px;
+    height: 50px;
+    border-radius: 0px;
+    border-color: #000000;
+    color: rgb(0, 0, 0);
+    box-shadow: 0 0 40px 40px rgb(185, 132, 9) inset, 0 0 0 0 rgb(185, 132, 9);
+    -webkit-transition: all 150ms ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
+.main-add button:hover {
+    box-shadow: 0 0 10px 0 rgb(185, 132, 9) inset, 0 0 10px 4px rgb(185, 132, 9);
+}
+
+@media (max-width: 750px) {
+    .container {
+        height: 300px;
+        width: 200px;
+        left: 20%;
+        top: 30%;
+    }
+}

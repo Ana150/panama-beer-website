@@ -35,9 +35,9 @@ Ferramentas utilizadas durante o projeto:
 * [JavaScript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
 * [php](https://www.php.net/)
 
-## Licença
+### Licença
 
-Distribuído sob a licença MIT. Veja `LICENSE.txt` para mais informações.
+Distribuído sob a licença MIT. Veja `LICENSE` para mais informações.
 
 ## Colaboradoras
 
@@ -55,7 +55,7 @@ Distribuído sob a licença MIT. Veja `LICENSE.txt` para mais informações.
       <a href="#">
         <img src="https://github.com/Evelyn-lima004.png" width="100px;" /><br>
         <sub>
-          <b>Evelyn Lavigne Gomes de L  ima</b>
+          <b>Evelyn Lavigne Gomes de Lima</b>
         </sub>
       </a>
     </td>
@@ -75,4 +75,4 @@ Distribuído sob a licença MIT. Veja `LICENSE.txt` para mais informações.
 [issues-shield]: https://img.shields.io/github/issues/Ana150/panama-beer-website.svg?style=for-the-badge
 [issues-url]: https://github.com/Ana150/panama-beer-website/issues
 [license-shield]: https://img.shields.io/github/license/Ana150/panama-beer-website.svg?style=for-the-badge
-[license-url]: https://github.com/Ana150/panama-beer-website/blob/master/LICENSE.txt# panama-beer-website
+[license-url]: https://github.com/Ana150/panama-beer-website/blob/master/LICENSE.txt

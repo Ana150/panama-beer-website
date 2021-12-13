@@ -33,28 +33,43 @@
 
     <main>
 
-        <div class="editar">
-            <input type="text" placeholder="Titulo">
+        <form action="acoes.php" method="POST">
 
-            <input type="text" placeholder="Descrição">
+            <div class="editar">
 
-            <input type="number" placeholder="Preço">
+                <input type="hidden" name="acao" value="inserir">
 
-            <button class="btn-enviar">Enviar</button>
+                <input type="text" placeholder="Titulo" name='nome'>
 
-            
+                <input type="text" placeholder="Descrição" name='descricao'>
 
-            <!-- <input type="button" placeholder="Enviar"> -->
+                <input type="number" placeholder="Preço" name='preco'>
 
-        </div>
+                <select id="cargo" name="cargo">
+                    <option id="selecione" selected disabled value="">Selecione:</option>
+                    <option></option>
+                </select>
 
-        <div class="image">
+                <button class="btn-enviar">Enviar</button>
 
-            <img src="../asset/img/garrafa-girando.gif" alt="">
 
-        </div>
+
+                <!-- <input type="button" placeholder="Enviar"> -->
+
+            </div>
+
+            <div class="image">
+
+                <input type="file" name='foto'>
+
+                <!-- <img src="ds../asset/img/garrafa-girando.gif" alt=""> -->
+
+            </div>
+
+        </form>
 
     </main>
+
 
 </body>
 

@@ -33,33 +33,40 @@
 
     <main>
 
+        <form action="acoes.php" method="POST">
 
-        <div class="editar" >
+            <div class="editar">
 
-        <form action="acoes.php"  method="POST">
-            <input type="hidden" name="acao" value="inserir">
-            
-            <input type="text" placeholder="Titulo" name='nome'>
+                <input type="hidden" name="acao" value="inserir">
 
-             <input type="text" placeholder="Descrição" name='descricao'>
+                <input type="text" placeholder="Titulo" name='nome'>
 
-            <input type="number" placeholder="Preço" name='preco'>
+                <input type="text" placeholder="Descrição" name='descricao'>
 
-            <button class="btn-enviar" >Enviar</button>
-        
-        
+                <input type="number" placeholder="Preço" name='preco'>
 
-            <!-- <input type="button" placeholder="Enviar"> -->
+                <input type="text" placeholder="categoria" name='categoria'>
 
-        </div>
+                <!-- <select id="cargo" name="cargo">
+                    <option id="selecione" selected disabled value="">Selecione:</option>
+                    <option></option>
+                </select> -->
 
-           <div class="image">
+                <button class="btn-enviar">Enviar</button>
 
-            <input type="file" name='foto'>
 
-            <!-- <img src="ds../asset/img/garrafa-girando.gif" alt=""> -->
 
-        </div>
+                <!-- <input type="button" placeholder="Enviar"> -->
+
+            </div>
+
+            <div class="image">
+
+                <input type="file" name='foto'>
+
+                <!-- <img src="ds../asset/img/garrafa-girando.gif" alt=""> -->
+
+            </div>
 
         </form>
 

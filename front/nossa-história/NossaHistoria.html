@@ -29,45 +29,19 @@
         </header>
 
         <main>
-            <div class="slider">
-                <button class="slider-pointer1" onclick="plusDivs(-1)"> ❮ </button>
-
-                <img class="mySlides" src="../img/giphy.gif" style="width: 100%" />
-                <img
-                    class="mySlides"
-                    src="../img/background-cerveja.jpg"
-                    style="width: 100%"
-                />
-                <img
-                    class="mySlides"
-                    src="../img/cerveja-fundo.jpg"
-                    style="width: 100%"
-                />
-                <img
-                    class="mySlides"
-                    src="../img/giphy beer.gif"
-                    style="width: 100%"
-                />
-
-                <button class="slider-pointer2" onclick="plusDivs(1)"> ❯ </button>
+            <div class="slider" style="max-width:600px; position:relative">
+            
+                <img class="mySlides" src="img/giphy.gif" style="width:100%">
+                <img class="mySlides" src="img/background-cerveja.jpg" style="width:100%">
+                <img class="mySlides" src="img/cerveja-fundo.jpg" style="width:100%">
+                <img class="mySlides" src="img/giphy beer.gif" style="width:100%">
+                
+                <button class="slider-pointer" style="position:absolute;top:45%;left:0" onclick="plusDivs(-1)">❮</button>
+                <button class="slider-pointer" style="position:absolute;top:45%;right:0" onclick="plusDivs(1)">❯</button   >
+                
             </div>
         </main>
 
-        <footer>
-      <div>
-        <H2> Fale conosco</H2>
-          <p> 
-            (11) 96693-4332
-          </p><br>
-        <h2> Horário de atendimento</h2>
-          <p> 
-            "Todos os dias"<br>
-            Segunda a quinta das 8h as 20h<br>
-            Sexta, Sábado e domingo 24h
-          </p>
-      </div>    
-      
-      <img class="footer-image" src="../img/Panamá beer.png" style="width: 500px" >
-    </footer>
+        
     </body>
 </html>

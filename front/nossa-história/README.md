@@ -1,2 +1,0 @@
-# panama-beer
-PANAMÁ BEER

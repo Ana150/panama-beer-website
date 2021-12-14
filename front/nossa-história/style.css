@@ -4,16 +4,21 @@
   box-sizing: border-box;
 }
 
-header {
-  background-color: #000000AA;
-  height: 90px;
-  display: flex;
 
-  justify-content: space-between;
+header {
+  display: flex;
+  justify-content: space-around;
   align-items: center;
-  padding: 0 10vw;
-  position: relative;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.712);
+  padding: 20px;
 }
+
+header img {
+  margin-top: 10px;
+  margin-top: 5;
+}
+
 
 header button {
   font-size: 18px;
@@ -40,36 +45,33 @@ a img{
   margin-bottom: 5px;
 }
 
-body{
-    width: 100vw;
-    height: 100vh;
-    background-image: url(../img/background-cerveja.jpg);
-    background-color: #00000090;
-    background-blend-mode: darken;
-    background-size: cover;
-    background-position: right top;
-    display: flex;
-    flex-direction: column;
-    font-family: 'Karla', sans-serif;
-    color: white;
-    gap: 200px;
+body {
+  height: 100vh;
+  width: 100vw;
+  background-image: url(../img/imgEditNH.PNG);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #0007;
+  background-blend-mode: darken;
+  display: flex;
+  flex-direction: column;
 }
 
 .slider{
+  position: absolute;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 50%;
-  position: relative;
-  left: 25%;
-  /* margin-top: 10%; */
+  margin-top: 10%;
+  margin-left: 30%;
 }
 
 .mySlides {
   display: none;
   border-radius: 0.5rem;
   width: 50%;
-
 }
 
 .slider-pointer {
@@ -77,9 +79,9 @@ body{
   width: 25px;
   height: 60px;
   position: absolute;
-  background-color: #9e701b;
-
+  background-color: #00000000;
   transform: translateY(-50%);
+  border: none;
 }
 
 .slider-pointer1 {
@@ -91,15 +93,6 @@ body{
   width: 25px;
   height: 60px;
 }
-
-
-/* .container{
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  } */
-
 
 #checkbox-menu {
   position: absolute;
@@ -157,34 +150,3 @@ button {
   color: white;
   border-color: none;
 }
-
-
-/* .background img{
-    width: 100%;
-    position: fixed;
-  } */
-
-footer {
-    display: flex;
-    flex-direction: column;
-    text-align: end;
-    background-color: #000000;
-
-  }
-
-  footer p, h2{
-    margin-right: 45px;
-    margin-top: 0px;
-  }
-
-  footer div{
-    margin-top: 90px;
-  }
-
-.footer-image{
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
-    margin-left: 650px;
-    margin-top: -185px;
-}
-
-

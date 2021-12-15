@@ -8,12 +8,13 @@
         <script src="./js/slide-script.js" defer></script>
         <link rel="stylesheet" href="slide.css" />
         <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="header.css" />
         <!-- <link rel="stylesheet" href="slides.css"> -->
         <title>Nossa História</title>
     </head>
     <body>
         <header>
-            <div class="container">
+            <!-- <div class="container">
                 <input type="checkbox" id="checkbox-menu" />
 
                 <label for="checkbox-menu">
@@ -21,7 +22,30 @@
                     <span></span>
                     <span></span>
                 </label>
-            </div>
+            </div> -->
+            <a href="#" class="menu-burger-container">
+                <i class="menu-burger"></i>
+            </a>
+            <nav class="menu">
+                <ul class="dropdown-menu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="NossaHistoria.html">Nossa História</a></li>
+                        <a href="#">Catalogo </a>
+                        <ul class="dropdown-submenu">
+
+                            <li><a href="#"> Pilsen</a></li>
+                            <li><a href="#">Lager</a></li>
+                            <li><a href="#">Pale Ale</a></li>
+                            <li><a href="#">Bock</a></li>
+                            <li><a href="#">Weissbier</a></li>
+                        </ul>
+                    </li>
+                    <li>    
+                        <a href="#"> Fale Conosco </a>
+                    </li>
+                    <li><a href="#">Login</a></li>
+                </ul>
+            </nav>
 
             <a href="../home/indexHome.html" class="logo">
                 <img src="../img/image 7.png" alt="logo-panamá" />

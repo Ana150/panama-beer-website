@@ -205,6 +205,8 @@ form .main-add {
     box-shadow: 0 0 10px 0 rgb(185, 132, 9) inset, 0 0 10px 4px rgb(185, 132, 9);
 }
 
+
+
 @media (max-width: 750px) {
     .container {
         height: 300px;

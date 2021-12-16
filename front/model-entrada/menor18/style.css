@@ -32,6 +32,10 @@ main {
     padding: 2.5em;
 }
 
+p{
+    font-size: 18px;
+}
+
 .text-section,
 .img-section,
 .section-text-img {
@@ -58,6 +62,9 @@ main {
 }
 
 .section-text-img img{
-    height: 250px;
+    height: 230px;
+    
+  
     
 }
+

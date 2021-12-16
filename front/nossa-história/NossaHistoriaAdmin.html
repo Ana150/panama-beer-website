@@ -1,47 +1,72 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <script src="./js/slide-script.js" defer></script>
-        <script src="https://use.fontawesome.com/62e43a72a9.js"></script>
-        <link rel="stylesheet" href="./style.css" />
-        <title>Página Administrativa</title>
-    </head>
-    <body>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="./js/slide-script.js" defer></script>
+    <script src="https://use.fontawesome.com/62e43a72a9.js"></script>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="slide.css" />
+    <link rel="stylesheet" href="header.css" />
+    <title>Página Administrativa</title>
+</head>
+
+<body>
+    <section class="section-1" id="section1">
         <header>
-            <div class="container">
-                <input type="checkbox" id="checkbox-menu" />
-                <label for="checkbox-menu">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </label>
-            </div>
+            <a href="#" class="menu-burger-container">
+                <i class="menu-burger"></i>
+            </a>
+            <nav class="menu">
+                <ul class="dropdown-menu">
+                    <li><a href="/front/home/indexHome.html">Home</a></li>
+                    <li><a href="NossaHistoria.html">Nossa História</a></li>
+                    <a href="/front/produtos/index.html">Catalogo </a>
+                    <ul class="dropdown-submenu">
+
+                        <li><a href="#"> Pilsen</a></li>
+                        <li><a href="#">Lager</a></li>
+                        <li><a href="#">Pale Ale</a></li>
+                        <li><a href="#">Bock</a></li>
+                        <li><a href="#">Weissbier</a></li>
+                    </ul>
+                    </li>
+                    <li>
+                        <a href="#"> Fale Conosco </a>
+                    </li>
+                    <li><a href="#">Login</a></li>
+                </ul>
+            </nav>
+
 
             <a href="../home/indexHomeAdiministrador.html" class="logo">
                 <img src="../img/logo.png" alt="logo-panamá" />
             </a>
             <a href="NossaHistoriaEditar.html">
                 <button type="submit"><i class="fa fa-pencil-square-o" aria-hidden="true"> Editar</i></button>
-            </a>  
+            </a>
         </header>
 
         <main>
-         
+
             <div class="slider" style="max-width:600px; position:relative">
-            
+
                 <img class="mySlides" src="img/giphy.gif" style="width:100%">
                 <img class="mySlides" src="img/background-cerveja.jpg" style="width:100%">
                 <img class="mySlides" src="img/cerveja-fundo.jpg" style="width:100%">
                 <img class="mySlides" src="img/giphy beer.gif" style="width:100%">
-                
-                <button class="slider-pointer" style="position:absolute;top:45%;left:0" onclick="plusDivs(-1)">❮</button>
-                <button class="slider-pointer" style="position:absolute;top:45%;right:0" onclick="plusDivs(1)">❯</button   >
-                
+
+                <button class="slider-pointer" style="position:absolute;top:45%;left:0"
+                    onclick="plusDivs(-1)">❮</button>
+                <button class="slider-pointer" style="position:absolute;top:45%;right:0"
+                    onclick="plusDivs(1)">❯</button>
+
             </div>
         </main>
+    </section>
 
-    </body>
+</body>
+
 </html>

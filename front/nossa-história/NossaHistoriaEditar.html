@@ -8,24 +8,43 @@
     <script src="./js/slide-script.js" defer></script>
     <script src="./js/main.js" defer type="module"></script>
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="mainEditar.css" />
     <link rel="stylesheet" href="button.css" />
+    <link rel="stylesheet" href="header.css" />
+    <!-- <link rel="stylesheet" href="modal.css" /> -->
+
+    
     <title>Página de edição</title>
 </head>
 
 <body>
     <header>
-        <div class="container">
-            <input type="checkbox" id="checkbox-menu" />
+        <a href="#" class="menu-burger-container">
+            <i class="menu-burger"></i>
+        </a>
+        <nav class="menu">
+            <ul class="dropdown-menu">
+                <li><a href="/front/home/indexHome.html">Home</a></li>
+                <li><a href="NossaHistoria.html">Nossa História</a></li>
+                <a href="/front/produtos/index.html">Catalogo </a>
+                <ul class="dropdown-submenu">
 
-            <label for="checkbox-menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </label>
-        </div>
-        <a href="../home/indexHomeAdiministrador.html" class="logo">
-            <img class="logo" src="../img/image 7.png" alt="logo-panamá" />
+                    <li><a href="#"> Pilsen</a></li>
+                    <li><a href="#">Lager</a></li>
+                    <li><a href="#">Pale Ale</a></li>
+                    <li><a href="#">Bock</a></li>
+                    <li><a href="#">Weissbier</a></li>
+                </ul>
+                </li>
+                <li>
+                    <a href="#"> Fale Conosco </a>
+                </li>
+                <li><a href="#">Login</a></li>
+            </ul>
+        </nav>
+
+        <a href="../home/indexHome.html" class="logo">
+            <img src="../img/image 7.png" alt="logo-panamá" />
         </a>
     </header>
 

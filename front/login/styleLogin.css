@@ -21,7 +21,6 @@ a img {
 
 body {
     height: 100vh;
-    width: 100vw;
     background-image: url(../img/imgLogin.png);
     background-color: #00000055;
     background-blend-mode: darken;
@@ -91,12 +90,12 @@ label span:nth-child(3) {
 }
 
 .login {
-    height: 100%;
+    height: 100vh;
     background: linear-gradient(to right, rgba(255, 255, 255, 0) 65%, rgb(185, 132, 9) 35%);
 }
 
 .container {
-    height: 600px;
+    height: 500px;
     width: 500px;
     position: absolute;
     left: 50%;
@@ -151,7 +150,7 @@ form .main {
 }
 
 .containerNovoAdm {
-    height: 600px;
+    height: 500px;
     width: 500px;
     position: absolute;
     left: 45%;

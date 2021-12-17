@@ -16,7 +16,7 @@
 }
 
 body {
-    width: 100vw;
+    margin: 20px;
     height: 100vh;
     display: flex;
     align-items: center;
